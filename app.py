@@ -163,13 +163,14 @@ TEMPLATE = """
         function closeQR() { document.getElementById('qr-modal').classList.add('hidden'); }
     </script>
 
-    <footer class="mt-auto pt-8 border-t border-white/5 flex items-center gap-4 p-6">
-        <img src="{{ url_for('static', filename='photos/4.jpg') }}" class="w-12 h-12 rounded-full border border-blue-500/50 object-cover" alt="Pradeep Paudel smiling portrait">
-        <div>
-            <p class="text-[10px] text-white/30 uppercase tracking-widest font-bold">Lead Developer</p>
-            <p class="text-sm font-bold text-white">Pradeep Paudel</p>
-        </div>
-    </footer>
+    <<div class="mt-10 pt-6 border-t border-white/10 flex items-center gap-4 stagger" style="animation-delay:0.8s">
+    <img src="https://raw.githubusercontent.com/Pradeep3523/Video-Pusher/main/6.jpg" 
+         class="w-14 h-14 rounded-full border-2 border-blue-500 object-cover ring-4 ring-blue-500/20">
+    <div>
+        <p class="text-[10px] text-blue-400 font-bold uppercase tracking-tighter">Developed By</p>
+        <p class="text-lg font-black text-white">Pradeep Paudel</p>
+    </div>
+</div>
 </body>
 </html>
 """
