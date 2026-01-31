@@ -15,4 +15,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Run the application using Gunicorn for stability
-CMD ["gunicorn", "--worker-class", "eventlet", "-w", "1", "--bind", "0.0.0.0:10000", "app:app"]
+# Replace your old CMD with this one
+CMD ["gunicorn", "-b", "0.0.0.0:10000", "app:app"]
