@@ -162,6 +162,14 @@ TEMPLATE = """
         }
         function closeQR() { document.getElementById('qr-modal').classList.add('hidden'); }
     </script>
+
+    <footer class="mt-auto pt-8 border-t border-white/5 flex items-center gap-4 p-6">
+        <img src="{{ url_for('static', filename='photos/4.jpg') }}" class="w-12 h-12 rounded-full border border-blue-500/50 object-cover" alt="Pradeep Paudel smiling portrait">
+        <div>
+            <p class="text-[10px] text-white/30 uppercase tracking-widest font-bold">Lead Developer</p>
+            <p class="text-sm font-bold text-white">Pradeep Paudel</p>
+        </div>
+    </footer>
 </body>
 </html>
 """
